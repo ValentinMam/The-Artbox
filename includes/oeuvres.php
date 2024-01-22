@@ -1,3 +1,6 @@
+<!-- si on ne veut pas qu'une oeuvre soit affichée : on remplace 'enabled' => true, par 'enabled' => false, -->
+
+
 <?php
 $oeuvres = [
     [

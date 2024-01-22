@@ -48,3 +48,24 @@ Pour vous aider :
 - l’idée est de regrouper toutes les œuvres dans un tableau. Chaque œuvre sera elle-même représentée par un tableau associatif qui regroupera les informations importantes de l'œuvre (titre, description, image...). Vous aurez donc une variable du type tableau contenant des tableaux.
 
 Une fois cette étape terminée, vous devriez avoir un tableau avec toutes les œuvres pleinement utilisable pour les prochaines étapes !
+
+## Étape 4 : Factorisez la page d’accueil
+
+Maintenant que votre tableau est prêt, vous allez pouvoir l’utiliser sur la page d’accueil. En effet, vous avez peut-être remarqué que le code de la vignette représentant une œuvre est écrit 15 fois. Seuls l’image et le texte varient d’une vignette à une autre.
+
+Ceci est problématique : si vous devez faire une modification sur le format de la vignette, vous devrez faire ce changement 15 fois !
+
+### Recommandations
+
+Comme vous l’avez peut-être compris, pour factoriser l’affichage des vignettes, vous allez devoir mettre en place une boucle dans votre page d’accueil afin de :
+
+- parcourir votre tableau d’œuvres créé à l’étape précédente ;
+- répéter automatiquement le code d’une vignette pour chacune de ces œuvres.
+
+Pour vous aider dans votre tâche :
+
+1. Identifiez bien le code répété pour chaque vignette.
+2. Insérez, dans votre boucle, le code HTML répété.
+3. Remplacez le contenu qui doit changer d’une œuvre à l’autre par les variables correspondantes, que vous afficherez en utilisant la fonction “echo”.
+
+Votre boucle est mise en place ? Félicitations, votre page d’accueil est maintenant complètement factorisée et terminée ! Si vous avez besoin de modifier le format des vignettes, vous n’aurez à faire le changement qu’une seule fois au lieu de 15. Félicitations !
