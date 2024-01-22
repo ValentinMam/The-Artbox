@@ -11,7 +11,7 @@
 
 <body>
   <!-- HEADER -->
-  <?php require_once(__DIR__ . '/header.php'); ?>
+  <?php include('includes/header.php'); ?>
 
   <main>
     <div id="liste-oeuvres">
@@ -123,7 +123,7 @@
     </div>
   </main>
   <!-- FOOTER -->
-  <?php require_once(__DIR__ . '/footer.php'); ?>
+  <?php include('includes/footer.php'); ?>
 </body>
 
 </html>

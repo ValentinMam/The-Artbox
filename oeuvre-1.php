@@ -11,7 +11,7 @@
 
 <body>
     <!-- HEADER -->
-    <?php require_once(__DIR__ . '/header.php'); ?>
+    <?php include('includes/header.php'); ?>
     <main>
         <article id="detail-oeuvre">
             <div id="img-oeuvre">
@@ -32,7 +32,7 @@
         </article>
     </main>
     <!-- FOOTER -->
-    <?php require_once(__DIR__ . '/footer.php'); ?>
+    <?php include('includes/footer.php'); ?>
 </body>
 
 </html>
