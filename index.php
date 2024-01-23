@@ -32,7 +32,7 @@
             </article> -->
 
           <article class="oeuvre">
-            <a href='oeuvres.php?id=<?php echo $oeuvre['id']; ?>'>
+            <a href='oeuvre.php?id=<?php echo $oeuvre['id']; ?>'>
               <img src=<?php echo $oeuvre['image']; ?> alt=<?php echo $oeuvre['alt']; ?>>
               <h2><?php echo $oeuvre['titre']; ?></h2>
               <p class="description"><?php echo $oeuvre['author']; ?></p>

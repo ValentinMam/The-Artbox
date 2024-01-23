@@ -69,3 +69,31 @@ Pour vous aider dans votre tâche :
 3. Remplacez le contenu qui doit changer d’une œuvre à l’autre par les variables correspondantes, que vous afficherez en utilisant la fonction “echo”.
 
 Votre boucle est mise en place ? Félicitations, votre page d’accueil est maintenant complètement factorisée et terminée ! Si vous avez besoin de modifier le format des vignettes, vous n’aurez à faire le changement qu’une seule fois au lieu de 15. Félicitations !
+
+## Étape 5 : Factorisez les pages de détail des œuvres
+
+Que de chemin parcouru ! Vous avez factorisé le header et le footer, ainsi que la page d’accueil. Un dernier problème subsiste. La page de détail d’une œuvre est dupliquée 15 fois, ce qui n’est pas une bonne chose. Si vous souhaitez changer l’affichage d’une œuvre, il faudra le faire sur chacune des œuvres. Remédions à cela.
+
+### Recommandations
+
+L’objectif est ici d’avoir un seul fichier oeuvre.php plutôt que 15 fichiers HTML. Commencez par créer ce fichier, et reprenez le contenu d’un des fichiers œuvres. Votre fichier sera appelé avec l’identifiant d’œuvre dans l’URL, par exemple :
+
+- oeuvre.php?id=1 pour la première œuvre (id correspondant à l’identifiant de l’œuvre) ;
+- oeuvre.php?id=2 pour la deuxième œuvre ;
+
+et ainsi de suite.
+
+Plusieurs modifications sont alors à apporter dans le fichier oeuvre.php :
+
+1. Récupérez l’identifiant présent dans l’URL.
+2. Recherchez, dans le tableau créé à l’étape 3, l’œuvre correspondant à l’identifiant (pour savoir comment rechercher un élément dans un tableau, retournez à la section "Recherchez dans un tableau").
+3. Affichez le contenu de cette œuvre plutôt que le texte en brut actuellement dans le code.
+
+N’oubliez pas de changer les liens des vignettes de la page d’accueil pour atterrir sur votre fichier oeuvre.php avec le bon identifiant dans l’URL.
+
+Une fois ces changements apportés, vous devriez pouvoir supprimer les 15 fichiers d’œuvres. Parfait ! Vous avez ainsi :
+
+- factorisé la structure des œuvres : si vous souhaitez modifier la structure de la page de détail d’une œuvre, vous n’avez à le faire qu’une seule fois ;
+- factorisé le contenu des œuvres : si vous souhaitez modifier une œuvre, il vous suffit de la modifier dans le tableau. Elle sera automatiquement modifiée dans la liste des œuvres et dans la page de détail de l’œuvre.
+
+Ça y est, votre code est factorisé, et vous avez maintenant un site dont les pages sont générées dynamiquement grâce à PHP. Il est temps de le présenter à Fatima.
